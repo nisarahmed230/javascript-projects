@@ -104,35 +104,61 @@ button:focus {
     outline: none;
     box-shadow: 0 0 5px #60569eaf;
 }
-
-.lap-title {
-    font-size: 1.6rem;
-    color: #ffffffc1;
-    margin-top: 20px;
-}
+/* Style the laps section */
 .laps {
     list-style: none;
     padding: 0;
-    margin: 0;
-    max-height: 200px;
+    margin: 20px 0 0;
+    max-height: 180px;
     overflow-y: auto;
-    width: 100%;
-}
-ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-li {
-    background-color: #333;
-    color: #ffffffc1;
+    width: 90%;
+    background-color: #2c2c2c;
+    border-radius: 10px;
     padding: 10px;
-    margin: 5px 0;
+}
+
+/* Lap list item */
+.laps li {
+    background-color: transparent;
+    color: #e6e6e6;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    border-left: 4px solid #60569e;
     border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    font-size: 1rem;
     display: flex;
     justify-content: space-between;
+    animation: slideIn 0.3s ease-in-out;
 }
-li:nth-child(odd) {
-    background-color: #444;
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Fancy scrollbar */
+.laps::-webkit-scrollbar {
+    width: 8px;
+}
+
+.laps::-webkit-scrollbar-track {
+    background: #1f1f1f;
+    border-radius: 10px;
+}
+
+.laps::-webkit-scrollbar-thumb {
+    background: #60569e;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.laps::-webkit-scrollbar-thumb:hover {
+    background: #8a7ee0;
 }
