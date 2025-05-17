@@ -106,6 +106,7 @@ button:focus {
 }
 /* Style the laps section */
 .laps {
+    color: #ffffffc1;
     list-style: none;
     padding: 0;
     margin: 20px 0 0;
