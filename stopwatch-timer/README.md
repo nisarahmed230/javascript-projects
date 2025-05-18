@@ -47,8 +47,8 @@ stopwatch-timer/
 ├── style.css
 ├── script.js
 ├── website-look/
-    ├── stopwatch-screenshot1.png
-    ├── stopwatch-screenshot2.png
-    ├── stopwatch-screenshot3.png
+│   ├── stopwatch-screenshot1.png
+│   ├── stopwatch-screenshot2.png
+│   └── stopwatch-screenshot3.png
 └── README.md
 ```
